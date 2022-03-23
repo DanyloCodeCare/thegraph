@@ -1,6 +1,13 @@
-type ExampleEntity @entity {
+type TransferUSDC @entity {
   id: ID!
-  count: BigInt!
-  owner: Bytes! # address
-  spender: Bytes! # address
+  initiator: Bytes!
+  from: Bytes!
+  value: BigInt!
+  to: Bytes!
+  hash: Bytes!
+  gasUsed: BigInt!
+  gasPrice: BigInt!
+  blockHash: Bytes!
+  blockNumber: BigInt!
+  timestamp: BigInt!
 }
